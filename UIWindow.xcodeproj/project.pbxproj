@@ -14,6 +14,7 @@
 		306285AC1BAE4A81006C7F8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306285AB1BAE4A81006C7F8F /* Images.xcassets */; };
 		306285AF1BAE4A81006C7F8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306285AD1BAE4A81006C7F8F /* LaunchScreen.xib */; };
 		306285BB1BAE4A82006C7F8F /* UIWindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 306285BA1BAE4A82006C7F8F /* UIWindowTests.m */; };
+		306285C51BAE7F67006C7F8F /* bbb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 306285C41BAE7F67006C7F8F /* bbb.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		306285B41BAE4A82006C7F8F /* UIWindowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIWindowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		306285B91BAE4A82006C7F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306285BA1BAE4A82006C7F8F /* UIWindowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWindowTests.m; sourceTree = "<group>"; };
+		306285C41BAE7F67006C7F8F /* bbb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bbb.jpg; path = ../../../Downloads/bbb.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		3062859D1BAE4A81006C7F8F /* UIWindow */ = {
 			isa = PBXGroup;
 			children = (
+				306285C41BAE7F67006C7F8F /* bbb.jpg */,
 				306285A21BAE4A81006C7F8F /* AppDelegate.h */,
 				306285A31BAE4A81006C7F8F /* AppDelegate.m */,
 				306285A51BAE4A81006C7F8F /* ViewController.h */,
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306285C51BAE7F67006C7F8F /* bbb.jpg in Resources */,
 				306285AA1BAE4A81006C7F8F /* Main.storyboard in Resources */,
 				306285AF1BAE4A81006C7F8F /* LaunchScreen.xib in Resources */,
 				306285AC1BAE4A81006C7F8F /* Images.xcassets in Resources */,
