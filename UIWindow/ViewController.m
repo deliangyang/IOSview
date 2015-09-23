@@ -42,16 +42,25 @@
     [self.view addSubview:label];
     
     // image view
-    NSString *path = [[NSBundle mainBundle] resourcePath];
-    NSString *imagePath = [NSString stringWithFormat:@"%@/bbb.jpg", path];
+//    NSString *path = [[NSBundle mainBundle] resourcePath];
+//    NSString *imagePath = [NSString stringWithFormat:@"%@/bbb.jpg", path];
+//    
+//    UIImage *image = [[UIImage alloc] initWithContentsOfFile:imagePath];
+//    
+//    // need carrier
+//    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+//    imageView.frame = CGRectMake(10, 10, 300, 300);
+//    
+//    [self.view addSubview:imageView];
     
-    UIImage *image = [[UIImage alloc] initWithContentsOfFile:imagePath];
     
-    // need carrier
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-    imageView.frame = CGRectMake(10, 10, 300, 300);
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor greenColor];
+    btn.frame = CGRectMake(20, 20, 100, 40);
+
+    [btn addTarget:self action:@selector(showHello) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:imageView];
+    [self.view addSubview:btn];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -60,5 +69,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)showHello {
+    NSLog(@"just test for hello world");
+    UIAlertView * alter = [[UIAlertView alloc]
+                           initWithTitle:@"just test"
+                           message:@"hello world"
+                           delegate:self
+                           cancelButtonTitle:@"test"
+                           otherButtonTitles:@"cancel"];
+    
+    [alter show];
+}
+
+
 
 @end
